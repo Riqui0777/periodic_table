@@ -5,7 +5,6 @@ if [[ ! $1 ]]
 then
   echo "Please provide an element as an argument."
 else 
-
   if [[ $1 -ge 1 ]]
   then
    ELEMENTS=$($PSQL "SELECT atomic_number, symbol, name, atomic_mass, melting_point_celsius, boiling_point_celsius, types.type FROM elements INNER JOIN properties USING(atomic_number) INNER JOIN types USING (type_id) WHERE atomic_number = '$1'")
