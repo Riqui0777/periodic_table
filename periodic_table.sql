@@ -22,7 +22,6 @@ DROP DATABASE periodic_table;
 
 CREATE DATABASE periodic_table WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'C.UTF-8' LC_CTYPE = 'C.UTF-8';
 
-
 ALTER DATABASE periodic_table OWNER TO postgres;
 
 \connect periodic_table
